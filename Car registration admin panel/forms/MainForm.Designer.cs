@@ -30,6 +30,8 @@ namespace Car_registration_admin_panel
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.carsDataGridView = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
@@ -70,14 +72,30 @@ namespace Car_registration_admin_panel
             // carsDataGridView
             // 
             this.carsDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.carsDataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.carsDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.carsDataGridView.Location = new System.Drawing.Point(10, 245);
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.carsDataGridView.DefaultCellStyle = dataGridViewCellStyle2;
+            this.carsDataGridView.Location = new System.Drawing.Point(8, 214);
             this.carsDataGridView.Margin = new System.Windows.Forms.Padding(2);
             this.carsDataGridView.MultiSelect = false;
             this.carsDataGridView.Name = "carsDataGridView";
             this.carsDataGridView.ReadOnly = true;
             this.carsDataGridView.RowHeadersWidth = 51;
-            this.carsDataGridView.Size = new System.Drawing.Size(764, 238);
+            this.carsDataGridView.Size = new System.Drawing.Size(777, 254);
             this.carsDataGridView.TabIndex = 0;
             this.carsDataGridView.SelectionChanged += new System.EventHandler(this.selectRowHandler);
             // 
@@ -85,10 +103,10 @@ namespace Car_registration_admin_panel
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(56, 9);
+            this.label1.Location = new System.Drawing.Point(42, 7);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(46, 17);
+            this.label1.Size = new System.Drawing.Size(37, 13);
             this.label1.TabIndex = 1;
             this.label1.Text = "ФИО:";
             // 
@@ -96,10 +114,10 @@ namespace Car_registration_admin_panel
             // 
             this.fullnameLabel.AutoSize = true;
             this.fullnameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.fullnameLabel.Location = new System.Drawing.Point(106, 9);
+            this.fullnameLabel.Location = new System.Drawing.Point(80, 7);
             this.fullnameLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.fullnameLabel.Name = "fullnameLabel";
-            this.fullnameLabel.Size = new System.Drawing.Size(46, 17);
+            this.fullnameLabel.Size = new System.Drawing.Size(35, 13);
             this.fullnameLabel.TabIndex = 2;
             this.fullnameLabel.Text = "label2";
             // 
@@ -107,10 +125,10 @@ namespace Car_registration_admin_panel
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label2.Location = new System.Drawing.Point(56, 33);
+            this.label2.Location = new System.Drawing.Point(42, 25);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(115, 17);
+            this.label2.Size = new System.Drawing.Size(89, 13);
             this.label2.TabIndex = 4;
             this.label2.Text = "Дата рождения:";
             // 
@@ -118,10 +136,10 @@ namespace Car_registration_admin_panel
             // 
             this.birthDateLabel.AutoSize = true;
             this.birthDateLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.birthDateLabel.Location = new System.Drawing.Point(175, 33);
+            this.birthDateLabel.Location = new System.Drawing.Point(131, 25);
             this.birthDateLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.birthDateLabel.Name = "birthDateLabel";
-            this.birthDateLabel.Size = new System.Drawing.Size(46, 17);
+            this.birthDateLabel.Size = new System.Drawing.Size(35, 13);
             this.birthDateLabel.TabIndex = 5;
             this.birthDateLabel.Text = "label3";
             // 
@@ -129,10 +147,10 @@ namespace Car_registration_admin_panel
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label3.Location = new System.Drawing.Point(11, 59);
+            this.label3.Location = new System.Drawing.Point(8, 45);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(53, 17);
+            this.label3.Size = new System.Drawing.Size(40, 13);
             this.label3.TabIndex = 6;
             this.label3.Text = "Почта:";
             // 
@@ -140,10 +158,10 @@ namespace Car_registration_admin_panel
             // 
             this.emailLabel.AutoSize = true;
             this.emailLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.emailLabel.Location = new System.Drawing.Point(68, 59);
+            this.emailLabel.Location = new System.Drawing.Point(51, 45);
             this.emailLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.emailLabel.Name = "emailLabel";
-            this.emailLabel.Size = new System.Drawing.Size(46, 17);
+            this.emailLabel.Size = new System.Drawing.Size(35, 13);
             this.emailLabel.TabIndex = 7;
             this.emailLabel.Text = "label4";
             // 
@@ -151,10 +169,10 @@ namespace Car_registration_admin_panel
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label4.Location = new System.Drawing.Point(11, 80);
+            this.label4.Location = new System.Drawing.Point(8, 65);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(70, 17);
+            this.label4.Size = new System.Drawing.Size(54, 13);
             this.label4.TabIndex = 8;
             this.label4.Text = "Моб.тел.:";
             // 
@@ -162,21 +180,22 @@ namespace Car_registration_admin_panel
             // 
             this.phoneLabel.AutoSize = true;
             this.phoneLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.phoneLabel.Location = new System.Drawing.Point(85, 80);
+            this.phoneLabel.Location = new System.Drawing.Point(64, 65);
             this.phoneLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.phoneLabel.Name = "phoneLabel";
-            this.phoneLabel.Size = new System.Drawing.Size(46, 17);
+            this.phoneLabel.Size = new System.Drawing.Size(35, 13);
             this.phoneLabel.TabIndex = 9;
             this.phoneLabel.Text = "label5";
             // 
             // editUserButton
             // 
+            this.editUserButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.editUserButton.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
             this.editUserButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.editUserButton.Location = new System.Drawing.Point(457, 11);
+            this.editUserButton.Location = new System.Drawing.Point(547, 11);
             this.editUserButton.Margin = new System.Windows.Forms.Padding(2);
             this.editUserButton.Name = "editUserButton";
-            this.editUserButton.Size = new System.Drawing.Size(202, 40);
+            this.editUserButton.Size = new System.Drawing.Size(152, 31);
             this.editUserButton.TabIndex = 10;
             this.editUserButton.Text = "Редактировать профиль";
             this.editUserButton.UseVisualStyleBackColor = true;
@@ -186,10 +205,10 @@ namespace Car_registration_admin_panel
             // 
             this.isAdminLabel.AutoSize = true;
             this.isAdminLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.isAdminLabel.Location = new System.Drawing.Point(99, 100);
+            this.isAdminLabel.Location = new System.Drawing.Point(74, 85);
             this.isAdminLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.isAdminLabel.Name = "isAdminLabel";
-            this.isAdminLabel.Size = new System.Drawing.Size(111, 17);
+            this.isAdminLabel.Size = new System.Drawing.Size(86, 13);
             this.isAdminLabel.TabIndex = 12;
             this.isAdminLabel.Text = "Администратор";
             // 
@@ -197,10 +216,10 @@ namespace Car_registration_admin_panel
             // 
             this.statusLabel.AutoSize = true;
             this.statusLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.statusLabel.Location = new System.Drawing.Point(10, 100);
+            this.statusLabel.Location = new System.Drawing.Point(8, 85);
             this.statusLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.statusLabel.Name = "statusLabel";
-            this.statusLabel.Size = new System.Drawing.Size(85, 17);
+            this.statusLabel.Size = new System.Drawing.Size(68, 13);
             this.statusLabel.TabIndex = 11;
             this.statusLabel.Text = "Должность:";
             // 
@@ -208,22 +227,23 @@ namespace Car_registration_admin_panel
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label5.Location = new System.Drawing.Point(9, 213);
+            this.label5.Location = new System.Drawing.Point(11, 186);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(302, 20);
+            this.label5.Size = new System.Drawing.Size(236, 17);
             this.label5.TabIndex = 13;
             this.label5.Text = "Зарегистрированные автомобили:";
             // 
             // exitButton
             // 
             this.exitButton.BackColor = System.Drawing.Color.Silver;
+            this.exitButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.exitButton.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
             this.exitButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.exitButton.Location = new System.Drawing.Point(663, 11);
+            this.exitButton.Location = new System.Drawing.Point(701, 11);
             this.exitButton.Margin = new System.Windows.Forms.Padding(2);
             this.exitButton.Name = "exitButton";
-            this.exitButton.Size = new System.Drawing.Size(112, 40);
+            this.exitButton.Size = new System.Drawing.Size(84, 31);
             this.exitButton.TabIndex = 15;
             this.exitButton.Text = "Выйти";
             this.exitButton.UseVisualStyleBackColor = false;
@@ -231,11 +251,11 @@ namespace Car_registration_admin_panel
             // 
             // searchByNumberTextBox
             // 
-            this.searchByNumberTextBox.Location = new System.Drawing.Point(363, 210);
+            this.searchByNumberTextBox.Location = new System.Drawing.Point(479, 184);
             this.searchByNumberTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.searchByNumberTextBox.MaxLength = 4;
             this.searchByNumberTextBox.Name = "searchByNumberTextBox";
-            this.searchByNumberTextBox.Size = new System.Drawing.Size(144, 23);
+            this.searchByNumberTextBox.Size = new System.Drawing.Size(109, 20);
             this.searchByNumberTextBox.TabIndex = 16;
             this.searchByNumberTextBox.TextChanged += new System.EventHandler(this.changeNumberValueHandler);
             // 
@@ -249,20 +269,20 @@ namespace Car_registration_admin_panel
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label7.Location = new System.Drawing.Point(359, 120);
+            this.label7.Location = new System.Drawing.Point(476, 115);
             this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(60, 20);
+            this.label7.Size = new System.Drawing.Size(48, 17);
             this.label7.TabIndex = 18;
             this.label7.Text = "Поиск";
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(360, 181);
+            this.label8.Location = new System.Drawing.Point(477, 161);
             this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(147, 17);
+            this.label8.Size = new System.Drawing.Size(116, 13);
             this.label8.TabIndex = 19;
             this.label8.Text = "Формат ввода: XXXX";
             // 
@@ -270,10 +290,10 @@ namespace Car_registration_admin_panel
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label9.Location = new System.Drawing.Point(360, 157);
+            this.label9.Location = new System.Drawing.Point(477, 143);
             this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(55, 18);
+            this.label9.Size = new System.Drawing.Size(46, 15);
             this.label9.TabIndex = 20;
             this.label9.Text = "Номер";
             // 
@@ -281,30 +301,30 @@ namespace Car_registration_admin_panel
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label10.Location = new System.Drawing.Point(509, 159);
+            this.label10.Location = new System.Drawing.Point(589, 145);
             this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(51, 18);
+            this.label10.Size = new System.Drawing.Size(43, 15);
             this.label10.TabIndex = 23;
             this.label10.Text = "Серия";
             // 
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(511, 181);
+            this.label11.Location = new System.Drawing.Point(590, 161);
             this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(129, 17);
+            this.label11.Size = new System.Drawing.Size(102, 13);
             this.label11.TabIndex = 22;
             this.label11.Text = "Формат ввода: XX";
             // 
             // searchBySeriesTextBox
             // 
-            this.searchBySeriesTextBox.Location = new System.Drawing.Point(512, 210);
+            this.searchBySeriesTextBox.Location = new System.Drawing.Point(591, 184);
             this.searchBySeriesTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.searchBySeriesTextBox.MaxLength = 2;
             this.searchBySeriesTextBox.Name = "searchBySeriesTextBox";
-            this.searchBySeriesTextBox.Size = new System.Drawing.Size(129, 23);
+            this.searchBySeriesTextBox.Size = new System.Drawing.Size(98, 20);
             this.searchBySeriesTextBox.TabIndex = 21;
             this.searchBySeriesTextBox.TextChanged += new System.EventHandler(this.changeSeriesValueHandler);
             // 
@@ -312,20 +332,20 @@ namespace Car_registration_admin_panel
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label12.Location = new System.Drawing.Point(642, 161);
+            this.label12.Location = new System.Drawing.Point(689, 146);
             this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(95, 18);
+            this.label12.Size = new System.Drawing.Size(79, 15);
             this.label12.TabIndex = 26;
             this.label12.Text = "Код региона";
             // 
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(642, 181);
+            this.label13.Location = new System.Drawing.Point(689, 161);
             this.label13.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(132, 17);
+            this.label13.Size = new System.Drawing.Size(103, 13);
             this.label13.TabIndex = 25;
             this.label13.Text = "Формат ввода: 0-7";
             // 
@@ -342,22 +362,23 @@ namespace Car_registration_admin_panel
             "5",
             "6",
             "7"});
-            this.searchByRegionCodeCombobox.Location = new System.Drawing.Point(645, 208);
+            this.searchByRegionCodeCombobox.Location = new System.Drawing.Point(692, 184);
             this.searchByRegionCodeCombobox.Margin = new System.Windows.Forms.Padding(2);
             this.searchByRegionCodeCombobox.Name = "searchByRegionCodeCombobox";
-            this.searchByRegionCodeCombobox.Size = new System.Drawing.Size(129, 25);
+            this.searchByRegionCodeCombobox.Size = new System.Drawing.Size(98, 21);
             this.searchByRegionCodeCombobox.TabIndex = 27;
             this.searchByRegionCodeCombobox.SelectedValueChanged += new System.EventHandler(this.changeRegionCodeValueHandler);
             this.searchByRegionCodeCombobox.TextChanged += new System.EventHandler(this.changeRegionCodeValueHandler);
             // 
             // clearFiltersButton
             // 
+            this.clearFiltersButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.clearFiltersButton.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
             this.clearFiltersButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.clearFiltersButton.Location = new System.Drawing.Point(623, 112);
+            this.clearFiltersButton.Location = new System.Drawing.Point(674, 109);
             this.clearFiltersButton.Margin = new System.Windows.Forms.Padding(2);
             this.clearFiltersButton.Name = "clearFiltersButton";
-            this.clearFiltersButton.Size = new System.Drawing.Size(151, 40);
+            this.clearFiltersButton.Size = new System.Drawing.Size(113, 31);
             this.clearFiltersButton.TabIndex = 28;
             this.clearFiltersButton.Text = "Очистить фильтры";
             this.clearFiltersButton.UseVisualStyleBackColor = true;
@@ -365,13 +386,14 @@ namespace Car_registration_admin_panel
             // 
             // openCarFormButton
             // 
+            this.openCarFormButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.openCarFormButton.Enabled = false;
             this.openCarFormButton.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
             this.openCarFormButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.openCarFormButton.Location = new System.Drawing.Point(9, 500);
+            this.openCarFormButton.Location = new System.Drawing.Point(8, 487);
             this.openCarFormButton.Margin = new System.Windows.Forms.Padding(2);
             this.openCarFormButton.Name = "openCarFormButton";
-            this.openCarFormButton.Size = new System.Drawing.Size(221, 45);
+            this.openCarFormButton.Size = new System.Drawing.Size(166, 34);
             this.openCarFormButton.TabIndex = 29;
             this.openCarFormButton.Text = "Информация об автомобиле";
             this.openCarFormButton.UseVisualStyleBackColor = true;
@@ -380,13 +402,14 @@ namespace Car_registration_admin_panel
             // deleteCarButton
             // 
             this.deleteCarButton.BackColor = System.Drawing.Color.Red;
+            this.deleteCarButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.deleteCarButton.FlatAppearance.BorderColor = System.Drawing.Color.Maroon;
             this.deleteCarButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.deleteCarButton.ForeColor = System.Drawing.Color.White;
-            this.deleteCarButton.Location = new System.Drawing.Point(603, 500);
+            this.deleteCarButton.Location = new System.Drawing.Point(656, 487);
             this.deleteCarButton.Margin = new System.Windows.Forms.Padding(2);
             this.deleteCarButton.Name = "deleteCarButton";
-            this.deleteCarButton.Size = new System.Drawing.Size(172, 45);
+            this.deleteCarButton.Size = new System.Drawing.Size(129, 34);
             this.deleteCarButton.TabIndex = 30;
             this.deleteCarButton.Text = "Удалить автомобиль";
             this.deleteCarButton.UseVisualStyleBackColor = false;
@@ -394,12 +417,13 @@ namespace Car_registration_admin_panel
             // 
             // addCarButton
             // 
+            this.addCarButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.addCarButton.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
             this.addCarButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.addCarButton.Location = new System.Drawing.Point(234, 500);
+            this.addCarButton.Location = new System.Drawing.Point(177, 487);
             this.addCarButton.Margin = new System.Windows.Forms.Padding(2);
             this.addCarButton.Name = "addCarButton";
-            this.addCarButton.Size = new System.Drawing.Size(365, 45);
+            this.addCarButton.Size = new System.Drawing.Size(274, 34);
             this.addCarButton.TabIndex = 32;
             this.addCarButton.Text = "Зарегистрировать автомобиль";
             this.addCarButton.UseVisualStyleBackColor = true;
@@ -407,12 +431,13 @@ namespace Car_registration_admin_panel
             // 
             // registrationRequestsButton
             // 
+            this.registrationRequestsButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.registrationRequestsButton.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
             this.registrationRequestsButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.registrationRequestsButton.Location = new System.Drawing.Point(9, 167);
+            this.registrationRequestsButton.Location = new System.Drawing.Point(11, 151);
             this.registrationRequestsButton.Margin = new System.Windows.Forms.Padding(2);
             this.registrationRequestsButton.Name = "registrationRequestsButton";
-            this.registrationRequestsButton.Size = new System.Drawing.Size(211, 38);
+            this.registrationRequestsButton.Size = new System.Drawing.Size(158, 29);
             this.registrationRequestsButton.TabIndex = 33;
             this.registrationRequestsButton.Text = "Заявки на регистрацию";
             this.registrationRequestsButton.UseVisualStyleBackColor = true;
@@ -420,22 +445,23 @@ namespace Car_registration_admin_panel
             // 
             // avatar
             // 
-            this.avatar.Location = new System.Drawing.Point(10, 10);
+            this.avatar.Location = new System.Drawing.Point(8, 8);
             this.avatar.Margin = new System.Windows.Forms.Padding(2);
             this.avatar.Name = "avatar";
-            this.avatar.Size = new System.Drawing.Size(42, 41);
+            this.avatar.Size = new System.Drawing.Size(32, 31);
             this.avatar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.avatar.TabIndex = 31;
             this.avatar.TabStop = false;
             // 
             // allUsersButton
             // 
+            this.allUsersButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.allUsersButton.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
             this.allUsersButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.allUsersButton.Location = new System.Drawing.Point(9, 125);
+            this.allUsersButton.Location = new System.Drawing.Point(11, 118);
             this.allUsersButton.Margin = new System.Windows.Forms.Padding(2);
             this.allUsersButton.Name = "allUsersButton";
-            this.allUsersButton.Size = new System.Drawing.Size(211, 38);
+            this.allUsersButton.Size = new System.Drawing.Size(158, 29);
             this.allUsersButton.TabIndex = 34;
             this.allUsersButton.Text = "Все пользователи";
             this.allUsersButton.UseVisualStyleBackColor = true;
@@ -443,10 +469,10 @@ namespace Car_registration_admin_panel
             // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(785, 556);
+            this.ClientSize = new System.Drawing.Size(796, 532);
             this.Controls.Add(this.allUsersButton);
             this.Controls.Add(this.registrationRequestsButton);
             this.Controls.Add(this.addCarButton);

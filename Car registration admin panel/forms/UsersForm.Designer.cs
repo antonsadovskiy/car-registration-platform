@@ -49,22 +49,21 @@ namespace Car_registration_admin_panel.forms
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.usersDataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.usersDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.usersDataGridView.Location = new System.Drawing.Point(16, 117);
-            this.usersDataGridView.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.usersDataGridView.Location = new System.Drawing.Point(12, 95);
             this.usersDataGridView.Name = "usersDataGridView";
             this.usersDataGridView.RowHeadersWidth = 51;
-            this.usersDataGridView.Size = new System.Drawing.Size(1038, 366);
+            this.usersDataGridView.Size = new System.Drawing.Size(778, 297);
             this.usersDataGridView.TabIndex = 0;
             this.usersDataGridView.SelectionChanged += new System.EventHandler(this.selectRowHandler);
             // 
             // backButton
             // 
+            this.backButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.backButton.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
             this.backButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.backButton.Location = new System.Drawing.Point(16, 15);
-            this.backButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.backButton.Location = new System.Drawing.Point(12, 12);
             this.backButton.Name = "backButton";
-            this.backButton.Size = new System.Drawing.Size(100, 28);
+            this.backButton.Size = new System.Drawing.Size(75, 23);
             this.backButton.TabIndex = 2;
             this.backButton.Text = "Назад";
             this.backButton.UseVisualStyleBackColor = true;
@@ -73,13 +72,13 @@ namespace Car_registration_admin_panel.forms
             // deleteUserButton
             // 
             this.deleteUserButton.BackColor = System.Drawing.Color.Red;
+            this.deleteUserButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.deleteUserButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.deleteUserButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.deleteUserButton.ForeColor = System.Drawing.Color.White;
-            this.deleteUserButton.Location = new System.Drawing.Point(830, 497);
-            this.deleteUserButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.deleteUserButton.Location = new System.Drawing.Point(622, 404);
             this.deleteUserButton.Name = "deleteUserButton";
-            this.deleteUserButton.Size = new System.Drawing.Size(224, 44);
+            this.deleteUserButton.Size = new System.Drawing.Size(168, 36);
             this.deleteUserButton.TabIndex = 3;
             this.deleteUserButton.Text = "Удалить пользователя";
             this.deleteUserButton.UseVisualStyleBackColor = false;
@@ -87,15 +86,14 @@ namespace Car_registration_admin_panel.forms
             // 
             // UsersForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.deleteUserButton);
             this.Controls.Add(this.backButton);
             this.Controls.Add(this.usersDataGridView);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "UsersForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Все пользователи";

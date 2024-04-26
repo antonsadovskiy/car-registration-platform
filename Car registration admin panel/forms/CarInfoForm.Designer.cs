@@ -53,22 +53,21 @@ namespace Car_registration_admin_panel
             // 
             this.carModelLabel.AutoSize = true;
             this.carModelLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.carModelLabel.Location = new System.Drawing.Point(591, 28);
-            this.carModelLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.carModelLabel.Location = new System.Drawing.Point(443, 23);
             this.carModelLabel.Name = "carModelLabel";
-            this.carModelLabel.Size = new System.Drawing.Size(46, 17);
+            this.carModelLabel.Size = new System.Drawing.Size(35, 13);
             this.carModelLabel.TabIndex = 0;
             this.carModelLabel.Text = "label1";
             // 
             // backButton
             // 
+            this.backButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.backButton.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
             this.backButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.backButton.Location = new System.Drawing.Point(17, 16);
-            this.backButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.backButton.Location = new System.Drawing.Point(13, 13);
             this.backButton.Name = "backButton";
-            this.backButton.Size = new System.Drawing.Size(100, 28);
-            this.backButton.TabIndex = 1;
+            this.backButton.Size = new System.Drawing.Size(75, 23);
+            this.backButton.TabIndex = 13;
             this.backButton.Text = "Назад";
             this.backButton.UseVisualStyleBackColor = true;
             this.backButton.Click += new System.EventHandler(this.backButton_Click);
@@ -77,10 +76,9 @@ namespace Car_registration_admin_panel
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(357, 26);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(268, 21);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(80, 20);
+            this.label1.Size = new System.Drawing.Size(62, 17);
             this.label1.TabIndex = 2;
             this.label1.Text = "Модель:";
             // 
@@ -88,10 +86,9 @@ namespace Car_registration_admin_panel
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label2.Location = new System.Drawing.Point(357, 58);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(268, 47);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(119, 20);
+            this.label2.Size = new System.Drawing.Size(94, 17);
             this.label2.TabIndex = 3;
             this.label2.Text = "Год выпуска:";
             // 
@@ -99,10 +96,9 @@ namespace Car_registration_admin_panel
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label3.Location = new System.Drawing.Point(357, 91);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(268, 74);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(207, 20);
+            this.label3.Size = new System.Drawing.Size(162, 17);
             this.label3.TabIndex = 4;
             this.label3.Text = "Автомобильный номер:";
             // 
@@ -110,10 +106,9 @@ namespace Car_registration_admin_panel
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label4.Location = new System.Drawing.Point(357, 126);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Location = new System.Drawing.Point(268, 102);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(57, 20);
+            this.label4.Size = new System.Drawing.Size(45, 17);
             this.label4.TabIndex = 5;
             this.label4.Text = "Цвет:";
             // 
@@ -121,10 +116,9 @@ namespace Car_registration_admin_panel
             // 
             this.carYearLabel.AutoSize = true;
             this.carYearLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.carYearLabel.Location = new System.Drawing.Point(591, 60);
-            this.carYearLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.carYearLabel.Location = new System.Drawing.Point(443, 49);
             this.carYearLabel.Name = "carYearLabel";
-            this.carYearLabel.Size = new System.Drawing.Size(46, 17);
+            this.carYearLabel.Size = new System.Drawing.Size(35, 13);
             this.carYearLabel.TabIndex = 6;
             this.carYearLabel.Text = "label5";
             // 
@@ -132,10 +126,9 @@ namespace Car_registration_admin_panel
             // 
             this.carNumberLabel.AutoSize = true;
             this.carNumberLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.carNumberLabel.Location = new System.Drawing.Point(591, 94);
-            this.carNumberLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.carNumberLabel.Location = new System.Drawing.Point(443, 76);
             this.carNumberLabel.Name = "carNumberLabel";
-            this.carNumberLabel.Size = new System.Drawing.Size(46, 17);
+            this.carNumberLabel.Size = new System.Drawing.Size(35, 13);
             this.carNumberLabel.TabIndex = 7;
             this.carNumberLabel.Text = "label6";
             // 
@@ -143,10 +136,9 @@ namespace Car_registration_admin_panel
             // 
             this.carColorLabel.AutoSize = true;
             this.carColorLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.carColorLabel.Location = new System.Drawing.Point(591, 128);
-            this.carColorLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.carColorLabel.Location = new System.Drawing.Point(443, 104);
             this.carColorLabel.Name = "carColorLabel";
-            this.carColorLabel.Size = new System.Drawing.Size(46, 17);
+            this.carColorLabel.Size = new System.Drawing.Size(35, 13);
             this.carColorLabel.TabIndex = 8;
             this.carColorLabel.Text = "label7";
             // 
@@ -162,34 +154,32 @@ namespace Car_registration_admin_panel
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.carViolationsDataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.carViolationsDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.carViolationsDataGridView.Location = new System.Drawing.Point(17, 201);
-            this.carViolationsDataGridView.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.carViolationsDataGridView.Location = new System.Drawing.Point(13, 163);
             this.carViolationsDataGridView.Name = "carViolationsDataGridView";
             this.carViolationsDataGridView.ReadOnly = true;
             this.carViolationsDataGridView.RowHeadersWidth = 51;
-            this.carViolationsDataGridView.Size = new System.Drawing.Size(1033, 309);
-            this.carViolationsDataGridView.TabIndex = 9;
+            this.carViolationsDataGridView.Size = new System.Drawing.Size(775, 251);
+            this.carViolationsDataGridView.TabIndex = 1;
             this.carViolationsDataGridView.SelectionChanged += new System.EventHandler(this.selectRowHandler);
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label5.Location = new System.Drawing.Point(16, 176);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Location = new System.Drawing.Point(12, 143);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(214, 20);
+            this.label5.Size = new System.Drawing.Size(173, 17);
             this.label5.TabIndex = 10;
             this.label5.Text = "Полученные нарушения:";
             // 
             // addViolationButton
             // 
+            this.addViolationButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.addViolationButton.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
             this.addViolationButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.addViolationButton.Location = new System.Drawing.Point(16, 519);
-            this.addViolationButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.addViolationButton.Location = new System.Drawing.Point(12, 423);
             this.addViolationButton.Name = "addViolationButton";
-            this.addViolationButton.Size = new System.Drawing.Size(279, 47);
+            this.addViolationButton.Size = new System.Drawing.Size(209, 37);
             this.addViolationButton.TabIndex = 11;
             this.addViolationButton.Text = "Добавить нарушение";
             this.addViolationButton.UseVisualStyleBackColor = true;
@@ -198,13 +188,13 @@ namespace Car_registration_admin_panel
             // deleteViolationButton
             // 
             this.deleteViolationButton.BackColor = System.Drawing.Color.Red;
+            this.deleteViolationButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.deleteViolationButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.deleteViolationButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.deleteViolationButton.ForeColor = System.Drawing.Color.White;
-            this.deleteViolationButton.Location = new System.Drawing.Point(865, 521);
-            this.deleteViolationButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.deleteViolationButton.Location = new System.Drawing.Point(649, 423);
             this.deleteViolationButton.Name = "deleteViolationButton";
-            this.deleteViolationButton.Size = new System.Drawing.Size(185, 45);
+            this.deleteViolationButton.Size = new System.Drawing.Size(139, 37);
             this.deleteViolationButton.TabIndex = 12;
             this.deleteViolationButton.Text = "Удалить нарушение";
             this.deleteViolationButton.UseVisualStyleBackColor = false;
@@ -212,34 +202,36 @@ namespace Car_registration_admin_panel
             // 
             // editViolationButton
             // 
+            this.editViolationButton.BackColor = System.Drawing.Color.White;
+            this.editViolationButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.editViolationButton.Enabled = false;
             this.editViolationButton.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
             this.editViolationButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.editViolationButton.Location = new System.Drawing.Point(303, 519);
-            this.editViolationButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.editViolationButton.Location = new System.Drawing.Point(227, 423);
             this.editViolationButton.Name = "editViolationButton";
-            this.editViolationButton.Size = new System.Drawing.Size(296, 47);
+            this.editViolationButton.Size = new System.Drawing.Size(222, 37);
             this.editViolationButton.TabIndex = 13;
             this.editViolationButton.Text = "Редактировать нарушение";
-            this.editViolationButton.UseVisualStyleBackColor = true;
+            this.editViolationButton.UseVisualStyleBackColor = false;
             this.editViolationButton.Click += new System.EventHandler(this.editViolationButton_Click);
             // 
             // noDataLabel
             // 
             this.noDataLabel.AutoSize = true;
             this.noDataLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.noDataLabel.Location = new System.Drawing.Point(421, 338);
+            this.noDataLabel.Location = new System.Drawing.Point(316, 275);
+            this.noDataLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.noDataLabel.Name = "noDataLabel";
-            this.noDataLabel.Size = new System.Drawing.Size(216, 20);
+            this.noDataLabel.Size = new System.Drawing.Size(169, 17);
             this.noDataLabel.TabIndex = 14;
             this.noDataLabel.Text = "Нарушения отсутствуют";
             // 
             // CarInfoForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1067, 577);
+            this.ClientSize = new System.Drawing.Size(800, 469);
             this.Controls.Add(this.noDataLabel);
             this.Controls.Add(this.editViolationButton);
             this.Controls.Add(this.deleteViolationButton);
@@ -256,7 +248,6 @@ namespace Car_registration_admin_panel
             this.Controls.Add(this.backButton);
             this.Controls.Add(this.carModelLabel);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "CarInfoForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Информация об автомобиле";

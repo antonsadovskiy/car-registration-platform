@@ -122,6 +122,7 @@ namespace Car_registration_admin_panel
                 {
                     deleteCarButton.Visible = mainUser.isAdmin;
                     openCarFormButton.Enabled = true;
+                    openCarFormButton.BackColor = System.Drawing.Color.White;
 
                     selectedCarId = Convert.ToInt32(carId);
                 }
@@ -130,6 +131,7 @@ namespace Car_registration_admin_panel
             {
                 openCarFormButton.Enabled = false;
                 deleteCarButton.Visible = false;
+                openCarFormButton.BackColor = System.Drawing.Color.Gainsboro;
             }
 
         }

@@ -42,57 +42,61 @@ namespace Car_registration_admin_panel
             // 
             // emailTextBox
             // 
-            this.emailTextBox.Location = new System.Drawing.Point(12, 102);
-            this.emailTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.emailTextBox.Location = new System.Drawing.Point(9, 83);
+            this.emailTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.emailTextBox.Name = "emailTextBox";
-            this.emailTextBox.Size = new System.Drawing.Size(403, 22);
+            this.emailTextBox.Size = new System.Drawing.Size(303, 20);
             this.emailTextBox.TabIndex = 0;
             // 
             // phoneTextBox
             // 
-            this.phoneTextBox.Location = new System.Drawing.Point(52, 154);
-            this.phoneTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.phoneTextBox.Location = new System.Drawing.Point(39, 125);
+            this.phoneTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.phoneTextBox.Name = "phoneTextBox";
-            this.phoneTextBox.Size = new System.Drawing.Size(363, 22);
+            this.phoneTextBox.Size = new System.Drawing.Size(273, 20);
             this.phoneTextBox.TabIndex = 1;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(9, 82);
+            this.label1.Location = new System.Drawing.Point(7, 67);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(49, 17);
+            this.label1.Size = new System.Drawing.Size(37, 13);
             this.label1.TabIndex = 4;
             this.label1.Text = "Почта";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 134);
+            this.label2.Location = new System.Drawing.Point(9, 109);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(72, 17);
+            this.label2.Size = new System.Drawing.Size(56, 13);
             this.label2.TabIndex = 5;
             this.label2.Text = "Моб.Тел.:";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(12, 158);
+            this.label3.Location = new System.Drawing.Point(9, 128);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(40, 17);
+            this.label3.Size = new System.Drawing.Size(31, 13);
             this.label3.TabIndex = 6;
             this.label3.Text = "+375";
             // 
             // updateUserInfoButton
             // 
             this.updateUserInfoButton.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.updateUserInfoButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.updateUserInfoButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.updateUserInfoButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.updateUserInfoButton.ForeColor = System.Drawing.Color.White;
-            this.updateUserInfoButton.Location = new System.Drawing.Point(12, 354);
-            this.updateUserInfoButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.updateUserInfoButton.Location = new System.Drawing.Point(9, 288);
+            this.updateUserInfoButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.updateUserInfoButton.Name = "updateUserInfoButton";
-            this.updateUserInfoButton.Size = new System.Drawing.Size(401, 41);
+            this.updateUserInfoButton.Size = new System.Drawing.Size(301, 33);
             this.updateUserInfoButton.TabIndex = 8;
             this.updateUserInfoButton.Text = "Сохранить";
             this.updateUserInfoButton.UseVisualStyleBackColor = false;
@@ -102,20 +106,22 @@ namespace Car_registration_admin_panel
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label4.Location = new System.Drawing.Point(125, 20);
+            this.label4.Location = new System.Drawing.Point(94, 16);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(0, 25);
+            this.label4.Size = new System.Drawing.Size(0, 20);
             this.label4.TabIndex = 11;
             // 
             // backButton
             // 
             this.backButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.backButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.backButton.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
             this.backButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.backButton.Location = new System.Drawing.Point(12, 12);
-            this.backButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.backButton.Location = new System.Drawing.Point(9, 10);
+            this.backButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.backButton.Name = "backButton";
-            this.backButton.Size = new System.Drawing.Size(89, 32);
+            this.backButton.Size = new System.Drawing.Size(67, 26);
             this.backButton.TabIndex = 10;
             this.backButton.Text = "Назад";
             this.backButton.UseVisualStyleBackColor = true;
@@ -123,10 +129,10 @@ namespace Car_registration_admin_panel
             // 
             // EditUserInfoForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(429, 406);
+            this.ClientSize = new System.Drawing.Size(322, 330);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.backButton);
             this.Controls.Add(this.updateUserInfoButton);
@@ -137,7 +143,7 @@ namespace Car_registration_admin_panel
             this.Controls.Add(this.emailTextBox);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "EditUserInfoForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Редактирование контактной информации";

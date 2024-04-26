@@ -42,14 +42,14 @@ namespace Car_registration_admin_panel
             // 
             // loginTextBox
             // 
-            this.loginTextBox.Location = new System.Drawing.Point(34, 104);
+            this.loginTextBox.Location = new System.Drawing.Point(72, 132);
             this.loginTextBox.Name = "loginTextBox";
             this.loginTextBox.Size = new System.Drawing.Size(221, 20);
             this.loginTextBox.TabIndex = 0;
             // 
             // passwordTextBox
             // 
-            this.passwordTextBox.Location = new System.Drawing.Point(34, 156);
+            this.passwordTextBox.Location = new System.Drawing.Point(72, 184);
             this.passwordTextBox.Name = "passwordTextBox";
             this.passwordTextBox.Size = new System.Drawing.Size(221, 20);
             this.passwordTextBox.TabIndex = 1;
@@ -57,7 +57,8 @@ namespace Car_registration_admin_panel
             // 
             // loginButton
             // 
-            this.loginButton.Location = new System.Drawing.Point(34, 228);
+            this.loginButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.loginButton.Location = new System.Drawing.Point(72, 278);
             this.loginButton.Name = "loginButton";
             this.loginButton.Size = new System.Drawing.Size(221, 31);
             this.loginButton.TabIndex = 3;
@@ -71,7 +72,7 @@ namespace Car_registration_admin_panel
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(95, 43);
+            this.label1.Location = new System.Drawing.Point(133, 71);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(109, 20);
             this.label1.TabIndex = 3;
@@ -82,7 +83,7 @@ namespace Car_registration_admin_panel
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(34, 88);
+            this.label2.Location = new System.Drawing.Point(72, 116);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(38, 13);
             this.label2.TabIndex = 4;
@@ -93,7 +94,7 @@ namespace Car_registration_admin_panel
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(34, 140);
+            this.label3.Location = new System.Drawing.Point(72, 168);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(45, 13);
             this.label3.TabIndex = 5;
@@ -103,7 +104,7 @@ namespace Car_registration_admin_panel
             // 
             this.dontHaveAccountLabel.AutoSize = true;
             this.dontHaveAccountLabel.BackColor = System.Drawing.Color.Transparent;
-            this.dontHaveAccountLabel.Location = new System.Drawing.Point(34, 205);
+            this.dontHaveAccountLabel.Location = new System.Drawing.Point(72, 255);
             this.dontHaveAccountLabel.Name = "dontHaveAccountLabel";
             this.dontHaveAccountLabel.Size = new System.Drawing.Size(81, 13);
             this.dontHaveAccountLabel.TabIndex = 2;
@@ -113,7 +114,8 @@ namespace Car_registration_admin_panel
             // 
             // loginAsAdminButton
             // 
-            this.loginAsAdminButton.Location = new System.Drawing.Point(34, 265);
+            this.loginAsAdminButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.loginAsAdminButton.Location = new System.Drawing.Point(72, 315);
             this.loginAsAdminButton.Name = "loginAsAdminButton";
             this.loginAsAdminButton.Size = new System.Drawing.Size(221, 31);
             this.loginAsAdminButton.TabIndex = 4;
@@ -126,7 +128,7 @@ namespace Car_registration_admin_panel
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Car_registration_admin_panel.Properties.Resources.auth_background;
-            this.ClientSize = new System.Drawing.Size(297, 312);
+            this.ClientSize = new System.Drawing.Size(363, 386);
             this.Controls.Add(this.loginAsAdminButton);
             this.Controls.Add(this.dontHaveAccountLabel);
             this.Controls.Add(this.label3);

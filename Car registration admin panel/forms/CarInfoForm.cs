@@ -109,13 +109,14 @@ namespace Car_registration_admin_panel
                 {
                     editViolationButton.Enabled = true;
                     deleteViolationButton.Visible = carInfoUser.isAdmin;
-
+                    editViolationButton.BackColor = System.Drawing.Color.White;
                     selectedCarViolationId = Convert.ToInt32(carViolationId);
                 }
             }
             else
             {
                 editViolationButton.Enabled = false;
+                editViolationButton.BackColor = System.Drawing.Color.Gainsboro;
                 deleteViolationButton.Visible = false;
             }
         }

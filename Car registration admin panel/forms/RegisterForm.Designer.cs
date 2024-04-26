@@ -95,6 +95,7 @@ namespace Car_registration_admin_panel
             // 
             // registerButton
             // 
+            this.registerButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.registerButton.Location = new System.Drawing.Point(165, 416);
             this.registerButton.Name = "registerButton";
             this.registerButton.Size = new System.Drawing.Size(221, 31);
@@ -122,6 +123,7 @@ namespace Car_registration_admin_panel
             // 
             this.alreadyHaveAccountLabel.AutoSize = true;
             this.alreadyHaveAccountLabel.BackColor = System.Drawing.Color.Transparent;
+            this.alreadyHaveAccountLabel.Cursor = System.Windows.Forms.Cursors.Hand;
             this.alreadyHaveAccountLabel.Location = new System.Drawing.Point(165, 394);
             this.alreadyHaveAccountLabel.Name = "alreadyHaveAccountLabel";
             this.alreadyHaveAccountLabel.Size = new System.Drawing.Size(104, 13);

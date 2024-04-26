@@ -139,6 +139,7 @@ namespace Car_registration_admin_panel.forms
                 {
                     registerCarButton.Enabled = true;
                     deleteRequestButton.Visible = true;
+                    registerCarButton.BackColor = System.Drawing.Color.White;
 
                     selectedRequestId = Convert.ToInt32(carId);
 
@@ -156,6 +157,7 @@ namespace Car_registration_admin_panel.forms
             {
                 registerCarButton.Enabled = false;
                 deleteRequestButton.Visible = false;
+                registerCarButton.BackColor = System.Drawing.Color.Gainsboro;
             }
         }
 

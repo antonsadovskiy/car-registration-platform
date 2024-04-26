@@ -48,98 +48,116 @@ namespace Car_registration_admin_panel.forms
         {
             SqlConnection con = new SqlConnection(Properties.Resources.CONNECTION_STRING);
 
-            bool isExists = isCarWithSameNumberAlreadyExists();
+            bool isFormValid = isCarAddFormValid();
 
-            if (isExists)
+            if (isFormValid)
             {
-                MessageBox.Show("Автомобиль с таким регистрационным знаком уже существует");
+                bool isExists = isCarWithSameNumberAlreadyExists();
+
+                if (isExists)
+                {
+                    MessageBox.Show("Автомобиль с таким регистрационным знаком уже существует");
+                }
+
+                if (!isExists)
+                {
+                    SqlCommand cmd = new SqlCommand("AddCar", con);
+                    cmd.CommandType = CommandType.StoredProcedure;
+
+                    cmd.Parameters.AddWithValue("@carModel", carModelTextBox.Text);
+                    cmd.Parameters.AddWithValue("@carYear", carYearTextBox.Text);
+                    cmd.Parameters.AddWithValue("@carMileage", carMileageTextBox.Text);
+                    cmd.Parameters.AddWithValue("@carColor", carColorTextBox.Text);
+                    cmd.Parameters.AddWithValue("@carNumber", carNumberTextBox.Text);
+                    cmd.Parameters.AddWithValue("@carSeries", carSeriesTextBox.Text);
+                    cmd.Parameters.AddWithValue("@carRegisterRegionCode", carRegionCodeCombobox.Text.ToString());
+                    cmd.Parameters.AddWithValue("@userId", ownerComboBox.SelectedValue.ToString());
+
+                    try
+                    {
+                        con.Open();
+
+                        cmd.ExecuteNonQuery();
+
+                        MessageBox.Show("Автомобиль успешно зарегистрирован!");
+
+                        mainForm = new MainForm(addCarFormUser);
+                        mainForm.Show();
+
+                        this.Close();
+                    }
+                    catch
+                    {
+                        MessageBox.Show("Не удалось зарегистрировать автомобиль");
+                    }
+                    finally
+                    {
+                        con.Close();
+                    }
+                }
+                return;
             }
 
-            if (!isExists)
-            {
-                SqlCommand cmd = new SqlCommand("AddCar", con);
-                cmd.CommandType = CommandType.StoredProcedure;
 
-                cmd.Parameters.AddWithValue("@carModel", carModelTextBox.Text);
-                cmd.Parameters.AddWithValue("@carYear", carYearTextBox.Text);
-                cmd.Parameters.AddWithValue("@carMileage", carMileageTextBox.Text);
-                cmd.Parameters.AddWithValue("@carColor", carColorTextBox.Text);
-                cmd.Parameters.AddWithValue("@carNumber", carNumberTextBox.Text);
-                cmd.Parameters.AddWithValue("@carSeries", carSeriesTextBox.Text);
-                cmd.Parameters.AddWithValue("@carRegisterRegionCode", carRegionCodeCombobox.Text.ToString());
-                cmd.Parameters.AddWithValue("@userId", ownerComboBox.SelectedValue.ToString());
-
-                try
-                {
-                    con.Open();
-
-                    cmd.ExecuteNonQuery();
-
-                    MessageBox.Show("Автомобиль успешно зарегистрирован!");
-
-                    mainForm = new MainForm(addCarFormUser);
-                    mainForm.Show();
-
-                    this.Close();
-                }
-                catch
-                {
-                    MessageBox.Show("Не удалось зарегистрировать автомобиль");
-                }
-                finally
-                {
-                    con.Close();
-                }
-            }
+            MessageBox.Show("Не все поля заполенены или заполнены неверно!");
         }
 
         private void leaveRequestButton_Click(object sender, EventArgs e)
         {
             SqlConnection con = new SqlConnection(Properties.Resources.CONNECTION_STRING);
 
-            bool isExists = isCarWithSameNumberAlreadyExists();
+            bool isFormValid = isCarAddFormValid();
 
-            if (isExists)
+            if (isFormValid)
             {
-                MessageBox.Show("Автомобиль с таким регистрационным знаком уже существует");
+                bool isExists = isCarWithSameNumberAlreadyExists();
+
+                if (isExists)
+                {
+                    MessageBox.Show("Автомобиль с таким регистрационным знаком уже существует");
+                }
+
+                if (!isExists)
+                {
+                    SqlCommand cmd = new SqlCommand("AddRegistrationCarRequest", con);
+                    cmd.CommandType = CommandType.StoredProcedure;
+
+                    cmd.Parameters.AddWithValue("@carModel", carModelTextBox.Text);
+                    cmd.Parameters.AddWithValue("@carYear", carYearTextBox.Text);
+                    cmd.Parameters.AddWithValue("@carMileage", carMileageTextBox.Text);
+                    cmd.Parameters.AddWithValue("@carColor", carColorTextBox.Text);
+                    cmd.Parameters.AddWithValue("@carNumber", carNumberTextBox.Text);
+                    cmd.Parameters.AddWithValue("@carSeries", carSeriesTextBox.Text);
+                    cmd.Parameters.AddWithValue("@carRegisterRegionCode", carRegionCodeCombobox.Text.ToString());
+                    cmd.Parameters.AddWithValue("@userId", addCarFormUser.userId);
+
+                    try
+                    {
+                        con.Open();
+
+                        cmd.ExecuteNonQuery();
+
+                        MessageBox.Show("Заявка на регистрацию успешно оставлена!");
+
+                        mainForm = new MainForm(addCarFormUser);
+                        mainForm.Show();
+
+                        this.Close();
+                    }
+                    catch
+                    {
+                        MessageBox.Show("Не удалось оставить заявку");
+                    }
+                    finally
+                    {
+                        con.Close();
+                    }
+                }
+
+                return;
             }
 
-            if (!isExists)
-            {
-                SqlCommand cmd = new SqlCommand("AddRegistrationCarRequest", con);
-                cmd.CommandType = CommandType.StoredProcedure;
-
-                cmd.Parameters.AddWithValue("@carModel", carModelTextBox.Text);
-                cmd.Parameters.AddWithValue("@carYear", carYearTextBox.Text);
-                cmd.Parameters.AddWithValue("@carMileage", carMileageTextBox.Text);
-                cmd.Parameters.AddWithValue("@carColor", carColorTextBox.Text);
-                cmd.Parameters.AddWithValue("@carNumber", carNumberTextBox.Text);
-                cmd.Parameters.AddWithValue("@carSeries", carSeriesTextBox.Text);
-                cmd.Parameters.AddWithValue("@carRegisterRegionCode", carRegionCodeCombobox.Text.ToString());
-                cmd.Parameters.AddWithValue("@userId", addCarFormUser.userId);
-
-                try
-                {
-                    con.Open();
-
-                    cmd.ExecuteNonQuery();
-
-                    MessageBox.Show("Заявка на регистрацию успешно оставлена!");
-
-                    mainForm = new MainForm(addCarFormUser);
-                    mainForm.Show();
-
-                    this.Close();
-                }
-                catch
-                {
-                    MessageBox.Show("Не удалось оставить заявку");
-                }
-                finally
-                {
-                    con.Close();
-                }
-            }
+            MessageBox.Show("Не все поля заполенены или заполнены неверно!");
         }
 
         private bool isCarWithSameNumberAlreadyExists()
@@ -177,6 +195,24 @@ namespace Car_registration_admin_panel.forms
             }
 
             return isExists;
+        }
+
+        private bool isCarAddFormValid()
+        {
+            if (
+                !string.IsNullOrEmpty(carModelTextBox.Text) &&
+                !string.IsNullOrEmpty(carYearTextBox.Text) &&
+                !string.IsNullOrEmpty(carModelTextBox.Text) &&
+                !string.IsNullOrEmpty(carColorTextBox.Text) &&
+                carNumberTextBox.Text.Length == 4 &&
+                carSeriesTextBox.Text.Length == 2 &&
+                carRegionCodeCombobox.Text.Length == 1
+                )
+            {
+                return true;
+            }
+
+            return false;
         }
     }
 }
