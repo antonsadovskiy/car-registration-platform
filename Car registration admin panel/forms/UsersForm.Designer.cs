@@ -36,6 +36,7 @@ namespace Car_registration_admin_panel.forms
             this.deleteUserButton = new Guna.UI2.WinForms.Guna2Button();
             this.usersDataGridView = new Guna.UI2.WinForms.Guna2DataGridView();
             this.backButton = new Guna.UI2.WinForms.Guna2Button();
+            this.createReportAboutUser = new Guna.UI2.WinForms.Guna2Button();
             ((System.ComponentModel.ISupportInitialize)(this.usersDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
@@ -131,12 +132,31 @@ namespace Car_registration_admin_panel.forms
             this.backButton.Text = "Назад";
             this.backButton.Click += new System.EventHandler(this.backButton_Click);
             // 
+            // createReportAboutUser
+            // 
+            this.createReportAboutUser.BackColor = System.Drawing.Color.White;
+            this.createReportAboutUser.BorderRadius = 2;
+            this.createReportAboutUser.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.createReportAboutUser.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.createReportAboutUser.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.createReportAboutUser.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.createReportAboutUser.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.createReportAboutUser.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.createReportAboutUser.ForeColor = System.Drawing.Color.White;
+            this.createReportAboutUser.Location = new System.Drawing.Point(12, 406);
+            this.createReportAboutUser.Name = "createReportAboutUser";
+            this.createReportAboutUser.Size = new System.Drawing.Size(323, 32);
+            this.createReportAboutUser.TabIndex = 54;
+            this.createReportAboutUser.Text = "Создать отчет о пользователе и его автомобилях";
+            this.createReportAboutUser.Click += new System.EventHandler(this.createReportAboutUser_Click);
+            // 
             // UsersForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.createReportAboutUser);
             this.Controls.Add(this.backButton);
             this.Controls.Add(this.usersDataGridView);
             this.Controls.Add(this.deleteUserButton);
@@ -153,5 +173,6 @@ namespace Car_registration_admin_panel.forms
         private Guna.UI2.WinForms.Guna2Button deleteUserButton;
         private Guna.UI2.WinForms.Guna2DataGridView usersDataGridView;
         private Guna.UI2.WinForms.Guna2Button backButton;
+        private Guna.UI2.WinForms.Guna2Button createReportAboutUser;
     }
 }

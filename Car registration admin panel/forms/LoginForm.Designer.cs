@@ -46,9 +46,10 @@ namespace Car_registration_admin_panel
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(96, 100);
+            this.label1.Location = new System.Drawing.Point(128, 123);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(109, 20);
+            this.label1.Size = new System.Drawing.Size(135, 25);
             this.label1.TabIndex = 3;
             this.label1.Text = "Авторизация";
             // 
@@ -57,9 +58,10 @@ namespace Car_registration_admin_panel
             this.dontHaveAccountLabel.AutoSize = true;
             this.dontHaveAccountLabel.BackColor = System.Drawing.Color.Transparent;
             this.dontHaveAccountLabel.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.dontHaveAccountLabel.Location = new System.Drawing.Point(9, 298);
+            this.dontHaveAccountLabel.Location = new System.Drawing.Point(12, 367);
+            this.dontHaveAccountLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.dontHaveAccountLabel.Name = "dontHaveAccountLabel";
-            this.dontHaveAccountLabel.Size = new System.Drawing.Size(81, 13);
+            this.dontHaveAccountLabel.Size = new System.Drawing.Size(105, 17);
             this.dontHaveAccountLabel.TabIndex = 3;
             this.dontHaveAccountLabel.TabStop = true;
             this.dontHaveAccountLabel.Text = "Нет аккаунта?";
@@ -77,12 +79,13 @@ namespace Car_registration_admin_panel
             this.loginTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.loginTextBox.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.loginTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.loginTextBox.Location = new System.Drawing.Point(12, 173);
+            this.loginTextBox.Location = new System.Drawing.Point(16, 213);
+            this.loginTextBox.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.loginTextBox.Name = "loginTextBox";
             this.loginTextBox.PasswordChar = '\0';
             this.loginTextBox.PlaceholderText = "Логин";
             this.loginTextBox.SelectedText = "";
-            this.loginTextBox.Size = new System.Drawing.Size(292, 36);
+            this.loginTextBox.Size = new System.Drawing.Size(389, 44);
             this.loginTextBox.TabIndex = 1;
             // 
             // passwordTextBox
@@ -97,12 +100,13 @@ namespace Car_registration_admin_panel
             this.passwordTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.passwordTextBox.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.passwordTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.passwordTextBox.Location = new System.Drawing.Point(12, 215);
+            this.passwordTextBox.Location = new System.Drawing.Point(16, 265);
+            this.passwordTextBox.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.passwordTextBox.Name = "passwordTextBox";
             this.passwordTextBox.PasswordChar = '*';
             this.passwordTextBox.PlaceholderText = "Пароль";
             this.passwordTextBox.SelectedText = "";
-            this.passwordTextBox.Size = new System.Drawing.Size(292, 41);
+            this.passwordTextBox.Size = new System.Drawing.Size(389, 50);
             this.passwordTextBox.TabIndex = 2;
             // 
             // loginButton
@@ -117,9 +121,10 @@ namespace Car_registration_admin_panel
             this.loginButton.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.loginButton.ForeColor = System.Drawing.Color.White;
             this.loginButton.IndicateFocus = true;
-            this.loginButton.Location = new System.Drawing.Point(12, 325);
+            this.loginButton.Location = new System.Drawing.Point(16, 400);
+            this.loginButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.loginButton.Name = "loginButton";
-            this.loginButton.Size = new System.Drawing.Size(292, 38);
+            this.loginButton.Size = new System.Drawing.Size(389, 47);
             this.loginButton.TabIndex = 4;
             this.loginButton.Text = "Войти";
             this.loginButton.UseTransparentBackground = true;
@@ -137,9 +142,10 @@ namespace Car_registration_admin_panel
             this.loginAsAdminButton.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.loginAsAdminButton.ForeColor = System.Drawing.Color.White;
             this.loginAsAdminButton.IndicateFocus = true;
-            this.loginAsAdminButton.Location = new System.Drawing.Point(12, 369);
+            this.loginAsAdminButton.Location = new System.Drawing.Point(16, 454);
+            this.loginAsAdminButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.loginAsAdminButton.Name = "loginAsAdminButton";
-            this.loginAsAdminButton.Size = new System.Drawing.Size(292, 38);
+            this.loginAsAdminButton.Size = new System.Drawing.Size(389, 47);
             this.loginAsAdminButton.TabIndex = 5;
             this.loginAsAdminButton.Text = "Войти как администратор";
             this.loginAsAdminButton.UseTransparentBackground = true;
@@ -150,18 +156,20 @@ namespace Car_registration_admin_panel
             this.guna2PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.guna2PictureBox1.Image = global::Car_registration_admin_panel.Properties.Resources.auth_background;
             this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(319, -3);
+            this.guna2PictureBox1.Location = new System.Drawing.Point(431, -4);
+            this.guna2PictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.Size = new System.Drawing.Size(642, 518);
+            this.guna2PictureBox1.Size = new System.Drawing.Size(850, 632);
+            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2PictureBox1.TabIndex = 6;
             this.guna2PictureBox1.TabStop = false;
             // 
             // LoginForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Cyan;
-            this.ClientSize = new System.Drawing.Size(693, 502);
+            this.ClientSize = new System.Drawing.Size(924, 602);
             this.Controls.Add(this.guna2PictureBox1);
             this.Controls.Add(this.loginAsAdminButton);
             this.Controls.Add(this.loginButton);
@@ -170,6 +178,7 @@ namespace Car_registration_admin_panel
             this.Controls.Add(this.dontHaveAccountLabel);
             this.Controls.Add(this.label1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "LoginForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Авторизация";

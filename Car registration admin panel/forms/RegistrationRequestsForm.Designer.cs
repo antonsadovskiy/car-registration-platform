@@ -45,10 +45,9 @@ namespace Car_registration_admin_panel.forms
             // 
             this.noDataLabel.AutoSize = true;
             this.noDataLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.noDataLabel.Location = new System.Drawing.Point(312, 211);
-            this.noDataLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.noDataLabel.Location = new System.Drawing.Point(416, 260);
             this.noDataLabel.Name = "noDataLabel";
-            this.noDataLabel.Size = new System.Drawing.Size(140, 17);
+            this.noDataLabel.Size = new System.Drawing.Size(182, 20);
             this.noDataLabel.TabIndex = 15;
             this.noDataLabel.Text = "Заявки отсутствуют";
             // 
@@ -63,9 +62,10 @@ namespace Car_registration_admin_panel.forms
             this.registerCarButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.registerCarButton.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.registerCarButton.ForeColor = System.Drawing.Color.White;
-            this.registerCarButton.Location = new System.Drawing.Point(12, 382);
+            this.registerCarButton.Location = new System.Drawing.Point(13, 472);
+            this.registerCarButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.registerCarButton.Name = "registerCarButton";
-            this.registerCarButton.Size = new System.Drawing.Size(252, 32);
+            this.registerCarButton.Size = new System.Drawing.Size(336, 39);
             this.registerCarButton.TabIndex = 49;
             this.registerCarButton.Text = "Зарегистрировать автомобиль";
             this.registerCarButton.Click += new System.EventHandler(this.registerCarButton_Click);
@@ -82,9 +82,10 @@ namespace Car_registration_admin_panel.forms
             this.deleteRequestButton.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.deleteRequestButton.ForeColor = System.Drawing.Color.White;
             this.deleteRequestButton.IndicateFocus = true;
-            this.deleteRequestButton.Location = new System.Drawing.Point(587, 382);
+            this.deleteRequestButton.Location = new System.Drawing.Point(786, 472);
+            this.deleteRequestButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.deleteRequestButton.Name = "deleteRequestButton";
-            this.deleteRequestButton.Size = new System.Drawing.Size(180, 32);
+            this.deleteRequestButton.Size = new System.Drawing.Size(240, 39);
             this.deleteRequestButton.TabIndex = 48;
             this.deleteRequestButton.Text = "Удалить заявку";
             this.deleteRequestButton.Click += new System.EventHandler(this.deleteRequestButton_Click);
@@ -101,9 +102,10 @@ namespace Car_registration_admin_panel.forms
             this.backButton.ForeColor = System.Drawing.Color.White;
             this.backButton.Image = global::Car_registration_admin_panel.Properties.Resources.left_arrow;
             this.backButton.ImageSize = new System.Drawing.Size(15, 15);
-            this.backButton.Location = new System.Drawing.Point(12, 12);
+            this.backButton.Location = new System.Drawing.Point(16, 15);
+            this.backButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.backButton.Name = "backButton";
-            this.backButton.Size = new System.Drawing.Size(70, 26);
+            this.backButton.Size = new System.Drawing.Size(93, 32);
             this.backButton.TabIndex = 54;
             this.backButton.Text = "Назад";
             this.backButton.Click += new System.EventHandler(this.backButton_Click);
@@ -131,11 +133,13 @@ namespace Car_registration_admin_panel.forms
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.registrationCarsRequestsDataGridView.DefaultCellStyle = dataGridViewCellStyle3;
             this.registrationCarsRequestsDataGridView.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.registrationCarsRequestsDataGridView.Location = new System.Drawing.Point(12, 95);
+            this.registrationCarsRequestsDataGridView.Location = new System.Drawing.Point(16, 117);
+            this.registrationCarsRequestsDataGridView.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.registrationCarsRequestsDataGridView.Name = "registrationCarsRequestsDataGridView";
             this.registrationCarsRequestsDataGridView.RowHeadersVisible = false;
+            this.registrationCarsRequestsDataGridView.RowHeadersWidth = 51;
             this.registrationCarsRequestsDataGridView.RowTemplate.Height = 26;
-            this.registrationCarsRequestsDataGridView.Size = new System.Drawing.Size(755, 281);
+            this.registrationCarsRequestsDataGridView.Size = new System.Drawing.Size(1007, 346);
             this.registrationCarsRequestsDataGridView.TabIndex = 55;
             this.registrationCarsRequestsDataGridView.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.registrationCarsRequestsDataGridView.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -162,17 +166,17 @@ namespace Car_registration_admin_panel.forms
             // 
             // RegistrationRequestsForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(779, 426);
+            this.ClientSize = new System.Drawing.Size(1039, 524);
             this.Controls.Add(this.registrationCarsRequestsDataGridView);
             this.Controls.Add(this.backButton);
             this.Controls.Add(this.registerCarButton);
             this.Controls.Add(this.deleteRequestButton);
             this.Controls.Add(this.noDataLabel);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "RegistrationRequestsForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Заявки на регистрацию";

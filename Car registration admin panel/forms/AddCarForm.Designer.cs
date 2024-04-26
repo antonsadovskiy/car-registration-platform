@@ -72,45 +72,50 @@ namespace Car_registration_admin_panel.forms
             // 
             this.ownerLabel.AutoSize = true;
             this.ownerLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.ownerLabel.Location = new System.Drawing.Point(12, 61);
+            this.ownerLabel.Location = new System.Drawing.Point(16, 75);
+            this.ownerLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.ownerLabel.Name = "ownerLabel";
-            this.ownerLabel.Size = new System.Drawing.Size(56, 13);
+            this.ownerLabel.Size = new System.Drawing.Size(73, 17);
             this.ownerLabel.TabIndex = 1;
             this.ownerLabel.Text = "Владелец";
             // 
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(286, 291);
+            this.label13.Location = new System.Drawing.Point(381, 358);
+            this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(103, 13);
+            this.label13.Size = new System.Drawing.Size(132, 17);
             this.label13.TabIndex = 34;
             this.label13.Text = "Формат ввода: 0-7";
             // 
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(140, 292);
+            this.label11.Location = new System.Drawing.Point(187, 359);
+            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(102, 13);
+            this.label11.Size = new System.Drawing.Size(129, 17);
             this.label11.TabIndex = 32;
             this.label11.Text = "Формат ввода: XX";
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(8, 291);
+            this.label8.Location = new System.Drawing.Point(11, 358);
+            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(116, 13);
+            this.label8.Size = new System.Drawing.Size(147, 17);
             this.label8.TabIndex = 29;
             this.label8.Text = "Формат ввода: XXXX";
             // 
             // ownerFIOLabel
             // 
             this.ownerFIOLabel.AutoSize = true;
-            this.ownerFIOLabel.Location = new System.Drawing.Point(89, 61);
+            this.ownerFIOLabel.Location = new System.Drawing.Point(119, 75);
+            this.ownerFIOLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.ownerFIOLabel.Name = "ownerFIOLabel";
-            this.ownerFIOLabel.Size = new System.Drawing.Size(35, 13);
+            this.ownerFIOLabel.Size = new System.Drawing.Size(46, 17);
             this.ownerFIOLabel.TabIndex = 38;
             this.ownerFIOLabel.Text = "label5";
             // 
@@ -123,9 +128,10 @@ namespace Car_registration_admin_panel.forms
             this.registerCarButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.registerCarButton.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.registerCarButton.ForeColor = System.Drawing.Color.White;
-            this.registerCarButton.Location = new System.Drawing.Point(11, 400);
+            this.registerCarButton.Location = new System.Drawing.Point(15, 492);
+            this.registerCarButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.registerCarButton.Name = "registerCarButton";
-            this.registerCarButton.Size = new System.Drawing.Size(415, 38);
+            this.registerCarButton.Size = new System.Drawing.Size(553, 47);
             this.registerCarButton.TabIndex = 41;
             this.registerCarButton.Text = "Зарегистрировать";
             this.registerCarButton.Click += new System.EventHandler(this.registerCarButton_Click);
@@ -140,9 +146,10 @@ namespace Car_registration_admin_panel.forms
             this.leaveRequestButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.leaveRequestButton.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.leaveRequestButton.ForeColor = System.Drawing.Color.White;
-            this.leaveRequestButton.Location = new System.Drawing.Point(11, 400);
+            this.leaveRequestButton.Location = new System.Drawing.Point(15, 492);
+            this.leaveRequestButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.leaveRequestButton.Name = "leaveRequestButton";
-            this.leaveRequestButton.Size = new System.Drawing.Size(415, 38);
+            this.leaveRequestButton.Size = new System.Drawing.Size(553, 47);
             this.leaveRequestButton.TabIndex = 42;
             this.leaveRequestButton.Text = "Оставить заявку";
             this.leaveRequestButton.Click += new System.EventHandler(this.leaveRequestButton_Click);
@@ -166,9 +173,10 @@ namespace Car_registration_admin_panel.forms
             "5",
             "6",
             "7"});
-            this.carRegionCodeCombobox.Location = new System.Drawing.Point(289, 308);
+            this.carRegionCodeCombobox.Location = new System.Drawing.Point(386, 383);
+            this.carRegionCodeCombobox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.carRegionCodeCombobox.Name = "carRegionCodeCombobox";
-            this.carRegionCodeCombobox.Size = new System.Drawing.Size(137, 36);
+            this.carRegionCodeCombobox.Size = new System.Drawing.Size(181, 36);
             this.carRegionCodeCombobox.TabIndex = 43;
             // 
             // carSeriesTextBox
@@ -182,13 +190,14 @@ namespace Car_registration_admin_panel.forms
             this.carSeriesTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.carSeriesTextBox.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.carSeriesTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.carSeriesTextBox.Location = new System.Drawing.Point(143, 308);
+            this.carSeriesTextBox.Location = new System.Drawing.Point(191, 379);
+            this.carSeriesTextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.carSeriesTextBox.MaxLength = 2;
             this.carSeriesTextBox.Name = "carSeriesTextBox";
             this.carSeriesTextBox.PasswordChar = '\0';
             this.carSeriesTextBox.PlaceholderText = "Серия";
             this.carSeriesTextBox.SelectedText = "";
-            this.carSeriesTextBox.Size = new System.Drawing.Size(140, 36);
+            this.carSeriesTextBox.Size = new System.Drawing.Size(187, 44);
             this.carSeriesTextBox.TabIndex = 44;
             // 
             // carNumberTextBox
@@ -202,13 +211,14 @@ namespace Car_registration_admin_panel.forms
             this.carNumberTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.carNumberTextBox.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.carNumberTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.carNumberTextBox.Location = new System.Drawing.Point(11, 308);
+            this.carNumberTextBox.Location = new System.Drawing.Point(15, 379);
+            this.carNumberTextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.carNumberTextBox.MaxLength = 4;
             this.carNumberTextBox.Name = "carNumberTextBox";
             this.carNumberTextBox.PasswordChar = '\0';
             this.carNumberTextBox.PlaceholderText = "Номер";
             this.carNumberTextBox.SelectedText = "";
-            this.carNumberTextBox.Size = new System.Drawing.Size(126, 36);
+            this.carNumberTextBox.Size = new System.Drawing.Size(168, 44);
             this.carNumberTextBox.TabIndex = 45;
             // 
             // carModelTextBox
@@ -222,12 +232,13 @@ namespace Car_registration_admin_panel.forms
             this.carModelTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.carModelTextBox.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.carModelTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.carModelTextBox.Location = new System.Drawing.Point(11, 108);
+            this.carModelTextBox.Location = new System.Drawing.Point(15, 133);
+            this.carModelTextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.carModelTextBox.Name = "carModelTextBox";
             this.carModelTextBox.PasswordChar = '\0';
             this.carModelTextBox.PlaceholderText = "Модель";
             this.carModelTextBox.SelectedText = "";
-            this.carModelTextBox.Size = new System.Drawing.Size(414, 35);
+            this.carModelTextBox.Size = new System.Drawing.Size(552, 43);
             this.carModelTextBox.TabIndex = 46;
             // 
             // carYearTextBox
@@ -241,12 +252,13 @@ namespace Car_registration_admin_panel.forms
             this.carYearTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.carYearTextBox.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.carYearTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.carYearTextBox.Location = new System.Drawing.Point(11, 149);
+            this.carYearTextBox.Location = new System.Drawing.Point(15, 183);
+            this.carYearTextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.carYearTextBox.Name = "carYearTextBox";
             this.carYearTextBox.PasswordChar = '\0';
             this.carYearTextBox.PlaceholderText = "Год выпуска";
             this.carYearTextBox.SelectedText = "";
-            this.carYearTextBox.Size = new System.Drawing.Size(414, 35);
+            this.carYearTextBox.Size = new System.Drawing.Size(552, 43);
             this.carYearTextBox.TabIndex = 47;
             // 
             // carMileageTextBox
@@ -260,12 +272,13 @@ namespace Car_registration_admin_panel.forms
             this.carMileageTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.carMileageTextBox.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.carMileageTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.carMileageTextBox.Location = new System.Drawing.Point(11, 190);
+            this.carMileageTextBox.Location = new System.Drawing.Point(15, 234);
+            this.carMileageTextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.carMileageTextBox.Name = "carMileageTextBox";
             this.carMileageTextBox.PasswordChar = '\0';
             this.carMileageTextBox.PlaceholderText = "Пробег";
             this.carMileageTextBox.SelectedText = "";
-            this.carMileageTextBox.Size = new System.Drawing.Size(413, 35);
+            this.carMileageTextBox.Size = new System.Drawing.Size(551, 43);
             this.carMileageTextBox.TabIndex = 48;
             // 
             // carColorTextBox
@@ -279,12 +292,13 @@ namespace Car_registration_admin_panel.forms
             this.carColorTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.carColorTextBox.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.carColorTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.carColorTextBox.Location = new System.Drawing.Point(11, 231);
+            this.carColorTextBox.Location = new System.Drawing.Point(15, 284);
+            this.carColorTextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.carColorTextBox.Name = "carColorTextBox";
             this.carColorTextBox.PasswordChar = '\0';
             this.carColorTextBox.PlaceholderText = "Цвет";
             this.carColorTextBox.SelectedText = "";
-            this.carColorTextBox.Size = new System.Drawing.Size(413, 35);
+            this.carColorTextBox.Size = new System.Drawing.Size(551, 43);
             this.carColorTextBox.TabIndex = 49;
             // 
             // ownerComboBox
@@ -299,9 +313,10 @@ namespace Car_registration_admin_panel.forms
             this.ownerComboBox.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.ownerComboBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.ownerComboBox.ItemHeight = 30;
-            this.ownerComboBox.Location = new System.Drawing.Point(74, 50);
+            this.ownerComboBox.Location = new System.Drawing.Point(101, 65);
+            this.ownerComboBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ownerComboBox.Name = "ownerComboBox";
-            this.ownerComboBox.Size = new System.Drawing.Size(350, 36);
+            this.ownerComboBox.Size = new System.Drawing.Size(465, 36);
             this.ownerComboBox.TabIndex = 50;
             this.ownerComboBox.ValueMember = "userId";
             // 
@@ -317,19 +332,20 @@ namespace Car_registration_admin_panel.forms
             this.guna2Button1.ForeColor = System.Drawing.Color.White;
             this.guna2Button1.Image = global::Car_registration_admin_panel.Properties.Resources.left_arrow;
             this.guna2Button1.ImageSize = new System.Drawing.Size(15, 15);
-            this.guna2Button1.Location = new System.Drawing.Point(11, 12);
+            this.guna2Button1.Location = new System.Drawing.Point(15, 15);
+            this.guna2Button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.Size = new System.Drawing.Size(70, 26);
+            this.guna2Button1.Size = new System.Drawing.Size(93, 32);
             this.guna2Button1.TabIndex = 51;
             this.guna2Button1.Text = "Назад";
             this.guna2Button1.Click += new System.EventHandler(this.backButton_Click);
             // 
             // AddCarForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(437, 450);
+            this.ClientSize = new System.Drawing.Size(583, 554);
             this.Controls.Add(this.guna2Button1);
             this.Controls.Add(this.ownerComboBox);
             this.Controls.Add(this.carColorTextBox);
@@ -347,6 +363,7 @@ namespace Car_registration_admin_panel.forms
             this.Controls.Add(this.label8);
             this.Controls.Add(this.ownerLabel);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "AddCarForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Регистрация нового автомобиля";

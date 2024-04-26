@@ -9,6 +9,7 @@ namespace Car_registration_admin_panel.forms
     public partial class UsersForm : Form
     {
         MainForm mainForm;
+        ReportForm reportForm;
         User usersFormUser;
 
         private SqlDataAdapter adapter;
@@ -111,13 +112,43 @@ namespace Car_registration_admin_panel.forms
                 if (!string.IsNullOrEmpty(userId))
                 {
                     deleteUserButton.Visible = true;
+                    createReportAboutUser.Enabled = true;
 
                     selectedUserId = Convert.ToInt32(userId);
+                }
+                else
+                {
+                    deleteUserButton.Visible = false;
+                    createReportAboutUser.Enabled = false;
                 }
             }
             else
             {
                 deleteUserButton.Visible = false;
+                createReportAboutUser.Enabled = false;
+            }
+        }
+
+        private void createReportAboutUser_Click(object sender, EventArgs e)
+        {
+            if (reportForm == null || reportForm.IsDisposed)
+            {
+                string surname = "", firstname = "", middlename = "";
+
+                foreach (DataGridViewRow row in usersDataGridView.Rows)
+                {
+                    if (row.Cells["userId"].Value.ToString() == selectedUserId.ToString())
+                    {
+                        surname = row.Cells["surname"].Value.ToString();
+                        firstname = row.Cells["firstname"].Value.ToString();
+                        middlename = row.Cells["middlename"].Value.ToString();
+                        break;
+                    }
+                }
+
+
+                reportForm = new ReportForm(surname, firstname, middlename, selectedUserId);
+                reportForm.Show();
             }
         }
     }
