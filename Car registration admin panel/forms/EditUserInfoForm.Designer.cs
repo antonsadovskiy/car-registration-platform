@@ -30,77 +30,23 @@ namespace Car_registration_admin_panel
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EditUserInfoForm));
-            this.emailTextBox = new System.Windows.Forms.TextBox();
-            this.phoneTextBox = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.updateUserInfoButton = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
-            this.backButton = new System.Windows.Forms.Button();
+            this.backButton = new Guna.UI2.WinForms.Guna2Button();
+            this.emailTextBox = new Guna.UI2.WinForms.Guna2TextBox();
+            this.phoneTextBox = new Guna.UI2.WinForms.Guna2TextBox();
+            this.updateUserInfoButton = new Guna.UI2.WinForms.Guna2Button();
             this.SuspendLayout();
-            // 
-            // emailTextBox
-            // 
-            this.emailTextBox.Location = new System.Drawing.Point(9, 83);
-            this.emailTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.emailTextBox.Name = "emailTextBox";
-            this.emailTextBox.Size = new System.Drawing.Size(303, 20);
-            this.emailTextBox.TabIndex = 0;
-            // 
-            // phoneTextBox
-            // 
-            this.phoneTextBox.Location = new System.Drawing.Point(39, 125);
-            this.phoneTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.phoneTextBox.Name = "phoneTextBox";
-            this.phoneTextBox.Size = new System.Drawing.Size(273, 20);
-            this.phoneTextBox.TabIndex = 1;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(7, 67);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(37, 13);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "Почта";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(9, 109);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(56, 13);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "Моб.Тел.:";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(9, 128);
+            this.label3.Location = new System.Drawing.Point(11, 124);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(31, 13);
             this.label3.TabIndex = 6;
             this.label3.Text = "+375";
-            // 
-            // updateUserInfoButton
-            // 
-            this.updateUserInfoButton.BackColor = System.Drawing.Color.CornflowerBlue;
-            this.updateUserInfoButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.updateUserInfoButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.updateUserInfoButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.updateUserInfoButton.ForeColor = System.Drawing.Color.White;
-            this.updateUserInfoButton.Location = new System.Drawing.Point(9, 288);
-            this.updateUserInfoButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.updateUserInfoButton.Name = "updateUserInfoButton";
-            this.updateUserInfoButton.Size = new System.Drawing.Size(301, 33);
-            this.updateUserInfoButton.TabIndex = 8;
-            this.updateUserInfoButton.Text = "Сохранить";
-            this.updateUserInfoButton.UseVisualStyleBackColor = false;
-            this.updateUserInfoButton.Click += new System.EventHandler(this.updateUserInfoButton_Click);
             // 
             // label4
             // 
@@ -114,18 +60,79 @@ namespace Car_registration_admin_panel
             // 
             // backButton
             // 
-            this.backButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.backButton.BorderRadius = 2;
             this.backButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.backButton.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
-            this.backButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.backButton.Location = new System.Drawing.Point(9, 10);
-            this.backButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.backButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.backButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.backButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.backButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.backButton.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.backButton.ForeColor = System.Drawing.Color.White;
+            this.backButton.Image = global::Car_registration_admin_panel.Properties.Resources.left_arrow;
+            this.backButton.ImageSize = new System.Drawing.Size(15, 15);
+            this.backButton.IndicateFocus = true;
+            this.backButton.Location = new System.Drawing.Point(12, 10);
             this.backButton.Name = "backButton";
-            this.backButton.Size = new System.Drawing.Size(67, 26);
-            this.backButton.TabIndex = 10;
+            this.backButton.Size = new System.Drawing.Size(70, 26);
+            this.backButton.TabIndex = 53;
             this.backButton.Text = "Назад";
-            this.backButton.UseVisualStyleBackColor = true;
             this.backButton.Click += new System.EventHandler(this.backButton_Click);
+            // 
+            // emailTextBox
+            // 
+            this.emailTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.emailTextBox.DefaultText = "";
+            this.emailTextBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.emailTextBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.emailTextBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.emailTextBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.emailTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.emailTextBox.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.emailTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.emailTextBox.Location = new System.Drawing.Point(12, 58);
+            this.emailTextBox.Name = "emailTextBox";
+            this.emailTextBox.PasswordChar = '\0';
+            this.emailTextBox.PlaceholderText = "Почта";
+            this.emailTextBox.SelectedText = "";
+            this.emailTextBox.Size = new System.Drawing.Size(298, 36);
+            this.emailTextBox.TabIndex = 54;
+            // 
+            // phoneTextBox
+            // 
+            this.phoneTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.phoneTextBox.DefaultText = "";
+            this.phoneTextBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.phoneTextBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.phoneTextBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.phoneTextBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.phoneTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.phoneTextBox.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.phoneTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.phoneTextBox.Location = new System.Drawing.Point(47, 113);
+            this.phoneTextBox.Name = "phoneTextBox";
+            this.phoneTextBox.PasswordChar = '\0';
+            this.phoneTextBox.PlaceholderText = "Мобильный телефон";
+            this.phoneTextBox.SelectedText = "";
+            this.phoneTextBox.Size = new System.Drawing.Size(263, 36);
+            this.phoneTextBox.TabIndex = 55;
+            // 
+            // updateUserInfoButton
+            // 
+            this.updateUserInfoButton.BorderRadius = 2;
+            this.updateUserInfoButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.updateUserInfoButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.updateUserInfoButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.updateUserInfoButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.updateUserInfoButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.updateUserInfoButton.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.updateUserInfoButton.ForeColor = System.Drawing.Color.White;
+            this.updateUserInfoButton.IndicateFocus = true;
+            this.updateUserInfoButton.Location = new System.Drawing.Point(12, 280);
+            this.updateUserInfoButton.Name = "updateUserInfoButton";
+            this.updateUserInfoButton.Size = new System.Drawing.Size(298, 38);
+            this.updateUserInfoButton.TabIndex = 56;
+            this.updateUserInfoButton.Text = "Сохранить";
+            this.updateUserInfoButton.Click += new System.EventHandler(this.updateUserInfoButton_Click);
             // 
             // EditUserInfoForm
             // 
@@ -133,17 +140,15 @@ namespace Car_registration_admin_panel
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(322, 330);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.backButton);
             this.Controls.Add(this.updateUserInfoButton);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.phoneTextBox);
             this.Controls.Add(this.emailTextBox);
+            this.Controls.Add(this.backButton);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "EditUserInfoForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Редактирование контактной информации";
@@ -153,14 +158,11 @@ namespace Car_registration_admin_panel
         }
 
         #endregion
-
-        private System.Windows.Forms.TextBox emailTextBox;
-        private System.Windows.Forms.TextBox phoneTextBox;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button updateUserInfoButton;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button backButton;
+        private Guna.UI2.WinForms.Guna2Button backButton;
+        private Guna.UI2.WinForms.Guna2TextBox emailTextBox;
+        private Guna.UI2.WinForms.Guna2TextBox phoneTextBox;
+        private Guna.UI2.WinForms.Guna2Button updateUserInfoButton;
     }
 }

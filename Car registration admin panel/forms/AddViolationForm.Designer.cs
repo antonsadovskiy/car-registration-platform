@@ -31,52 +31,19 @@ namespace Car_registration_admin_panel.forms
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddViolationForm));
-            this.addViolationButton = new System.Windows.Forms.Button();
-            this.timeOfViolationDateTimePicker = new System.Windows.Forms.DateTimePicker();
-            this.violationTypeComboBox = new System.Windows.Forms.ComboBox();
             this.violationsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.statevehicleinspectiondbDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.state_vehicle_inspection_dbDataSet = new Car_registration_admin_panel.state_vehicle_inspection_dbDataSet();
             this.violationsTableAdapter = new Car_registration_admin_panel.state_vehicle_inspection_dbDataSetTableAdapters.violationsTableAdapter();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.addViolationButton = new Guna.UI2.WinForms.Guna2Button();
+            this.violationTypeComboBox = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.timeOfViolationDateTimePicker = new Guna.UI2.WinForms.Guna2DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.violationsBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.statevehicleinspectiondbDataSetBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.state_vehicle_inspection_dbDataSet)).BeginInit();
             this.SuspendLayout();
-            // 
-            // addViolationButton
-            // 
-            this.addViolationButton.BackColor = System.Drawing.Color.CornflowerBlue;
-            this.addViolationButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.addViolationButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.addViolationButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.addViolationButton.ForeColor = System.Drawing.Color.White;
-            this.addViolationButton.Location = new System.Drawing.Point(13, 324);
-            this.addViolationButton.Name = "addViolationButton";
-            this.addViolationButton.Size = new System.Drawing.Size(320, 35);
-            this.addViolationButton.TabIndex = 0;
-            this.addViolationButton.Text = "Добавить";
-            this.addViolationButton.UseVisualStyleBackColor = false;
-            this.addViolationButton.Click += new System.EventHandler(this.addViolationButton_Click);
-            // 
-            // timeOfViolationDateTimePicker
-            // 
-            this.timeOfViolationDateTimePicker.Location = new System.Drawing.Point(13, 116);
-            this.timeOfViolationDateTimePicker.Name = "timeOfViolationDateTimePicker";
-            this.timeOfViolationDateTimePicker.Size = new System.Drawing.Size(321, 20);
-            this.timeOfViolationDateTimePicker.TabIndex = 1;
-            // 
-            // violationTypeComboBox
-            // 
-            this.violationTypeComboBox.DataSource = this.violationsBindingSource;
-            this.violationTypeComboBox.DisplayMember = "violationDescription";
-            this.violationTypeComboBox.FormattingEnabled = true;
-            this.violationTypeComboBox.Location = new System.Drawing.Point(13, 44);
-            this.violationTypeComboBox.Name = "violationTypeComboBox";
-            this.violationTypeComboBox.Size = new System.Drawing.Size(321, 21);
-            this.violationTypeComboBox.TabIndex = 2;
-            this.violationTypeComboBox.ValueMember = "violationId";
             // 
             // violationsBindingSource
             // 
@@ -115,17 +82,66 @@ namespace Car_registration_admin_panel.forms
             this.label2.TabIndex = 4;
             this.label2.Text = "Дата нарушения";
             // 
+            // addViolationButton
+            // 
+            this.addViolationButton.BorderRadius = 2;
+            this.addViolationButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.addViolationButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.addViolationButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.addViolationButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.addViolationButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.addViolationButton.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.addViolationButton.ForeColor = System.Drawing.Color.White;
+            this.addViolationButton.Location = new System.Drawing.Point(12, 320);
+            this.addViolationButton.Name = "addViolationButton";
+            this.addViolationButton.Size = new System.Drawing.Size(322, 38);
+            this.addViolationButton.TabIndex = 5;
+            this.addViolationButton.Text = "Добавить";
+            this.addViolationButton.Click += new System.EventHandler(this.addViolationButton_Click);
+            // 
+            // violationTypeComboBox
+            // 
+            this.violationTypeComboBox.BackColor = System.Drawing.Color.Transparent;
+            this.violationTypeComboBox.DataSource = this.violationsBindingSource;
+            this.violationTypeComboBox.DisplayMember = "violationDescription";
+            this.violationTypeComboBox.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.violationTypeComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.violationTypeComboBox.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.violationTypeComboBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.violationTypeComboBox.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.violationTypeComboBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.violationTypeComboBox.ItemHeight = 30;
+            this.violationTypeComboBox.Location = new System.Drawing.Point(12, 44);
+            this.violationTypeComboBox.Name = "violationTypeComboBox";
+            this.violationTypeComboBox.Size = new System.Drawing.Size(321, 36);
+            this.violationTypeComboBox.TabIndex = 6;
+            this.violationTypeComboBox.ValueMember = "violationId";
+            // 
+            // timeOfViolationDateTimePicker
+            // 
+            this.timeOfViolationDateTimePicker.Checked = true;
+            this.timeOfViolationDateTimePicker.FillColor = System.Drawing.Color.White;
+            this.timeOfViolationDateTimePicker.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.timeOfViolationDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.timeOfViolationDateTimePicker.Location = new System.Drawing.Point(12, 116);
+            this.timeOfViolationDateTimePicker.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.timeOfViolationDateTimePicker.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.timeOfViolationDateTimePicker.Name = "timeOfViolationDateTimePicker";
+            this.timeOfViolationDateTimePicker.Size = new System.Drawing.Size(321, 36);
+            this.timeOfViolationDateTimePicker.TabIndex = 7;
+            this.timeOfViolationDateTimePicker.Value = new System.DateTime(2024, 4, 26, 17, 11, 55, 729);
+            // 
             // AddViolationForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(346, 370);
+            this.Controls.Add(this.timeOfViolationDateTimePicker);
+            this.Controls.Add(this.violationTypeComboBox);
+            this.Controls.Add(this.addViolationButton);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.violationTypeComboBox);
-            this.Controls.Add(this.timeOfViolationDateTimePicker);
-            this.Controls.Add(this.addViolationButton);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "AddViolationForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -140,15 +156,14 @@ namespace Car_registration_admin_panel.forms
         }
 
         #endregion
-
-        private System.Windows.Forms.Button addViolationButton;
-        private System.Windows.Forms.DateTimePicker timeOfViolationDateTimePicker;
-        private System.Windows.Forms.ComboBox violationTypeComboBox;
         private System.Windows.Forms.BindingSource statevehicleinspectiondbDataSetBindingSource;
         private state_vehicle_inspection_dbDataSet state_vehicle_inspection_dbDataSet;
         private System.Windows.Forms.BindingSource violationsBindingSource;
         private state_vehicle_inspection_dbDataSetTableAdapters.violationsTableAdapter violationsTableAdapter;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private Guna.UI2.WinForms.Guna2Button addViolationButton;
+        private Guna.UI2.WinForms.Guna2ComboBox violationTypeComboBox;
+        private Guna.UI2.WinForms.Guna2DateTimePicker timeOfViolationDateTimePicker;
     }
 }

@@ -53,6 +53,7 @@ namespace Car_registration_admin_panel.forms
                 {
                     registrationCarsRequestsDataGridView.Visible = false;
                     registerCarButton.Visible = false;
+                    deleteRequestButton.Visible = false;
                 }
                 else
                 {
@@ -139,7 +140,6 @@ namespace Car_registration_admin_panel.forms
                 {
                     registerCarButton.Enabled = true;
                     deleteRequestButton.Visible = true;
-                    registerCarButton.BackColor = System.Drawing.Color.White;
 
                     selectedRequestId = Convert.ToInt32(carId);
 
@@ -152,12 +152,16 @@ namespace Car_registration_admin_panel.forms
                     carRegisterRegionCode = selectedRow.Cells["carRegisterRegionCode"].Value.ToString();
                     userId = Convert.ToInt32(selectedRow.Cells["userId"].Value);
                 }
+                else
+                {
+                    registerCarButton.Enabled = false;
+                    deleteRequestButton.Visible = false;
+                }
             }
             else
             {
                 registerCarButton.Enabled = false;
                 deleteRequestButton.Visible = false;
-                registerCarButton.BackColor = System.Drawing.Color.Gainsboro;
             }
         }
 
